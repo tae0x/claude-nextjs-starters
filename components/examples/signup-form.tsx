@@ -163,8 +163,9 @@ export function SignupForm() {
             control={form.control}
             render={({ field }) => (
               <Field>
-                <FieldLabel>플랜</FieldLabel>
+                <FieldLabel id="signup-plan-label">플랜</FieldLabel>
                 <RadioGroup
+                  aria-labelledby="signup-plan-label"
                   value={field.value}
                   onValueChange={(value) =>
                     field.onChange(value as SignupValues["plan"])

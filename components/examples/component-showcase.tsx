@@ -261,7 +261,7 @@ function FormControlsSection() {
         </div>
       </DemoCard>
       <DemoCard title="라디오 그룹" tag="RadioGroup">
-        <RadioGroup defaultValue="pro">
+        <RadioGroup defaultValue="pro" aria-label="플랜">
           {["free", "pro", "team"].map((plan) => (
             <div key={plan} className="flex items-center gap-2">
               <RadioGroupItem value={plan} id={`showcase-plan-${plan}`} />
