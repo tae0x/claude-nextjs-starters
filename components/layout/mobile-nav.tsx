@@ -36,7 +36,7 @@ export function MobileNav() {
       <SheetContent side="left">
         <SheetHeader>
           <SheetTitle>
-            <Logo />
+            <Logo onClick={() => setOpen(false)} />
           </SheetTitle>
         </SheetHeader>
         <nav className="flex flex-col gap-1 px-4">

@@ -4,10 +4,17 @@ import { cn } from "cn";
 
 import { siteConfig } from "@/config/site";
 
-export function Logo({ className }: { className?: string }) {
+export function Logo({
+  className,
+  onClick,
+}: {
+  className?: string;
+  onClick?: () => void;
+}) {
   return (
     <Link
       href="/"
+      onClick={onClick}
       className={cn("flex items-center gap-2 font-semibold", className)}
     >
       <Blocks className="size-5" />
