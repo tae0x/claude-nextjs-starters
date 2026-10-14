@@ -59,6 +59,10 @@ Radix가 아니므로 `asChild`가 없다. 대신 `render` prop을 쓴다. 링�
 
 `NEXT_PUBLIC_SITE_URL`만 사용한다 (`config/site.ts`의 `siteConfig.url`, `metadataBase`의 기준). 없으면 `http://localhost:3000`이다. 예시는 `.env.example`에 있다.
 
+## 코드 리뷰
+
+코드 구현(기능 추가·수정·리팩토링)을 마치면 응답을 끝내기 전에 `code-reviewer` 서브에이전트를 실행해 변경사항을 리뷰하고, 지적 사항을 사용자에게 보고한다. 문서·설정만 바뀐 경우는 생략한다.
+
 ## Git
 
 `.playwright-mcp/`(Playwright MCP 산출물)는 gitignore 대상이다.
