@@ -141,4 +141,5 @@ export const routeLabels: Record<string, string> = {
   "sidebar-layout": "사이드바 앱 셸",
   settings: "설정",
   login: "로그인",
+  signup: "회원가입",
 };

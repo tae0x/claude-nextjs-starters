@@ -17,12 +17,12 @@ export const metadata: Metadata = {
 
 export default function LoginPage() {
   return (
-    <Container className="flex flex-1 items-center justify-center py-12">
+    <Container className="flex flex-1 items-center justify-center py-8 sm:py-12">
       <Card className="w-full max-w-sm">
         <CardHeader>
           <CardTitle>로그인</CardTitle>
           <CardDescription>
-            React Hook Form + Zod 검증 예제입니다.
+            이메일과 비밀번호를 입력해 로그인하세요.
           </CardDescription>
         </CardHeader>
         <CardContent>

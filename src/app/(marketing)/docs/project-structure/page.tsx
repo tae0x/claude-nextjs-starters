@@ -59,6 +59,7 @@ export default function ProjectStructurePage() {
 ├─ (marketing)/                헤더 + 푸터 레이아웃
 │  ├─ page.tsx                 랜딩 (/)
 │  ├─ login/                   로그인 폼 (/login)
+│  ├─ signup/                  회원가입 폼 (/signup)
 │  ├─ docs/                    문서 (/docs/*)
 │  └─ examples/                예제 (/examples/*)
 └─ (app-shell)/examples/sidebar-layout/
