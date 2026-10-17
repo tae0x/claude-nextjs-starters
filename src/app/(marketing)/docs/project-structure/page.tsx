@@ -8,14 +8,14 @@ export const metadata: Metadata = {
 };
 
 const layers = [
-  ["L0 Foundation", "app/globals.css, lib/utils.ts, config/site.ts, stores/", "스타일 토큰, 설정, 전역 상태"],
-  ["L1 Primitives", "components/ui/", "shadcn 원본 (CLI로만 추가)"],
-  ["L2 Common", "components/common/", "ui를 조합한 재사용 블록 (로고, 테마 토글 등)"],
-  ["L2 Docs/Examples", "components/docs/, components/examples/", "문서·예제 페이지 전용 블록 (코드 블록, 훅 데모 등)"],
-  ["L3 Layout", "components/layout/", "헤더, 푸터, 사이드바 등 영역 단위 조립체"],
-  ["L4 Providers", "components/providers/", "ThemeProvider 등 컨텍스트"],
-  ["L5 Templates", "app/**/layout.tsx", "라우트 그룹별 레이아웃"],
-  ["L6 Pages", "app/**/page.tsx", "페이지"],
+  ["L0 Foundation", "src/app/globals.css, src/lib/utils.ts, src/config/site.ts, src/stores/, src/hooks/","스타일 토큰, 설정, 전역 상태"],
+  ["L1 Primitives", "src/components/ui/", "shadcn 원본 (CLI로만 추가)"],
+  ["L2 Common", "src/components/common/", "ui를 조합한 재사용 블록 (로고, 테마 토글 등)"],
+  ["L2 Docs/Examples", "src/components/docs/, src/components/examples/", "문서·예제 페이지 전용 블록 (코드 블록, 훅 데모 등)"],
+  ["L3 Layout", "src/components/layout/", "헤더, 푸터, 사이드바 등 영역 단위 조립체"],
+  ["L4 Providers", "src/components/providers/", "ThemeProvider 등 컨텍스트"],
+  ["L5 Templates", "src/app/**/layout.tsx", "라우트 그룹별 레이아웃"],
+  ["L6 Pages", "src/app/**/page.tsx", "페이지"],
 ];
 
 export default function ProjectStructurePage() {
@@ -52,8 +52,8 @@ export default function ProjectStructurePage() {
 
       <h2 id="routes">라우트 구성</h2>
       <CodeBlock
-        title="app/"
-        code={`app/
+        title="src/app/"
+        code={`src/app/
 ├─ layout.tsx                  루트 레이아웃 (폰트, 테마, 토스트)
 ├─ loading.tsx / error.tsx / global-error.tsx / not-found.tsx
 ├─ (marketing)/                헤더 + 푸터 레이아웃
@@ -76,14 +76,14 @@ export default function ProjectStructurePage() {
           <code>&quot;use client&quot;</code>를 씁니다.
         </li>
         <li>
-          사이트 이름, 네비게이션, 브레드크럼 라벨은 <code>config/site.ts</code>{" "}
+          사이트 이름, 네비게이션, 브레드크럼 라벨은 <code>src/config/site.ts</code>{" "}
           한 곳에서 관리합니다.
         </li>
         <li>
-          경로 별칭은 <code>@/</code>(프로젝트 루트)입니다.
+          경로 별칭은 <code>@/</code>(<code>src/</code>)입니다.
         </li>
         <li>
-          <code>components/ui</code>는 shadcn CLI로 추가한 원본이므로 직접 수정을
+          <code>src/components/ui</code>는 shadcn CLI로 추가한 원본이므로 직접 수정을
           최소화합니다.
         </li>
         <li>
@@ -104,7 +104,7 @@ export default function ProjectStructurePage() {
         반영됩니다.
       </p>
       <CodeBlock
-        title="app/(marketing)/docs/layout.tsx"
+        title="src/app/(marketing)/docs/layout.tsx"
         code={`export default function DocsLayout({ children }: LayoutProps<"/docs">) {
   return <div>{children}</div>;
 }`}

@@ -58,18 +58,18 @@ npm run dev`}
       <h2 id="customize">내 프로젝트로 바꾸기</h2>
       <ol>
         <li>
-          <code>config/site.ts</code>에서 사이트 이름, 설명, 네비게이션을
+          <code>src/config/site.ts</code>에서 사이트 이름, 설명, 네비게이션을
           수정합니다.
         </li>
         <li>
-          <code>app/(marketing)/page.tsx</code>의 랜딩 내용을 서비스에 맞게
+          <code>src/app/(marketing)/page.tsx</code>의 랜딩 내용을 서비스에 맞게
           바꿉니다.
         </li>
         <li>
-          필요 없는 문서·예제 라우트(<code>app/(marketing)/docs</code>,{" "}
-          <code>app/(marketing)/examples</code>,{" "}
-          <code>app/(app-shell)</code>)는 폴더째 삭제해도 됩니다. 삭제 후{" "}
-          <code>config/site.ts</code>의 <code>mainNav</code>도 정리하세요.
+          필요 없는 문서·예제 라우트(<code>src/app/(marketing)/docs</code>,{" "}
+          <code>src/app/(marketing)/examples</code>,{" "}
+          <code>src/app/(app-shell)</code>)는 폴더째 삭제해도 됩니다. 삭제 후{" "}
+          <code>src/config/site.ts</code>의 <code>mainNav</code>도 정리하세요.
         </li>
       </ol>
 

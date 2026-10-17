@@ -17,11 +17,11 @@ export default function StateDocPage() {
     >
       <h2 id="store">스토어 만들기</h2>
       <p>
-        스토어는 <code>stores/</code> 폴더에 둡니다. 이 프로젝트의{" "}
-        <code>stores/notification-store.ts</code>가 예제입니다.
+        스토어는 <code>src/stores/</code> 폴더에 둡니다. 이 프로젝트의{" "}
+        <code>src/stores/notification-store.ts</code>가 예제입니다.
       </p>
       <CodeBlock
-        title="stores/notification-store.ts"
+        title="src/stores/notification-store.ts"
         code={`import { create } from "zustand";
 
 type NotificationState = {

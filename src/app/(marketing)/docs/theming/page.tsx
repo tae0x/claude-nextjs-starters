@@ -44,7 +44,7 @@ export function Example() {
 
       <h2 id="tokens">디자인 토큰</h2>
       <p>
-        색상은 <code>app/globals.css</code>의 CSS 변수(<code>--background</code>,{" "}
+        색상은 <code>src/app/globals.css</code>의 CSS 변수(<code>--background</code>,{" "}
         <code>--primary</code> 등)로 정의되어 있으며, <code>:root</code>와{" "}
         <code>.dark</code>에서 각각 값을 지정합니다. 값을 바꾸면 모든 컴포넌트에
         반영됩니다.

@@ -37,7 +37,7 @@ const layouts = [
   {
     title: "헤더 + 본문 + 푸터",
     description: "마케팅 페이지의 기본 구조입니다. 헤더는 상단에 고정됩니다.",
-    file: "app/(marketing)/layout.tsx",
+    file: "src/app/(marketing)/layout.tsx",
     href: "/",
     action: "랜딩 페이지 보기",
     preview: (
@@ -53,7 +53,7 @@ const layouts = [
   {
     title: "사이드바 앱 셸",
     description: "접이식 사이드바 + 상단바 + 본문. 모바일에서는 시트로 전환됩니다.",
-    file: "app/(app-shell)/examples/sidebar-layout/layout.tsx",
+    file: "src/app/(app-shell)/examples/sidebar-layout/layout.tsx",
     href: "/examples/sidebar-layout",
     action: "직접 열어보기",
     preview: (
@@ -71,7 +71,7 @@ const layouts = [
   {
     title: "문서형 2단",
     description: "좌측 내비게이션 + 본문. 좁은 화면에서는 메뉴가 시트로 열립니다.",
-    file: "app/(marketing)/docs/layout.tsx",
+    file: "src/app/(marketing)/docs/layout.tsx",
     href: "/docs",
     action: "문서 보기",
     preview: (
@@ -93,7 +93,7 @@ const layouts = [
   {
     title: "중앙 정렬 카드",
     description: "로그인·가입처럼 한 가지 작업에 집중하는 화면입니다.",
-    file: "app/(marketing)/login/page.tsx",
+    file: "src/app/(marketing)/login/page.tsx",
     href: "/login",
     action: "로그인 화면 보기",
     preview: (
@@ -107,7 +107,7 @@ const layouts = [
   {
     title: "반응형 카드 그리드",
     description: "화면 폭에 따라 1 → 2 → 3열로 늘어나는 목록입니다.",
-    file: "app/(marketing)/page.tsx",
+    file: "src/app/(marketing)/page.tsx",
     href: "/#features",
     action: "랜딩의 기능 목록",
     preview: (
@@ -165,7 +165,7 @@ export default function LayoutsExamplePage() {
           폴더 이름을 괄호로 감싸면 URL에는 드러나지 않고 레이아웃만 공유합니다.
         </p>
         <CodeBlock
-          title="app/(marketing)/layout.tsx"
+          title="src/app/(marketing)/layout.tsx"
           code={`import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 

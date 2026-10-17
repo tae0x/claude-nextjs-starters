@@ -19,14 +19,14 @@ model: inherit
 ## 검토 항목
 
 - **정확성**: 로직 오류, 엣지 케이스, 타입 안전성, 에러 처리
-- **계층 의존 방향**: 아래에서 위로만 import 해야 합니다.
+- **계층 의존 방향**: 아래에서 위로만 import 해야 합니다. (소스는 `src/` 아래에 있으며, 아래 경로는 `src/`를 생략한 표기입니다.)
   `config/site.ts`, `stores/`, `lib/utils.ts` → `components/ui` → `components/common` → `components/layout` → `components/providers` → `app/**/layout.tsx` → `app/**/page.tsx`
 - **서버/클라이언트 경계**: 불필요하게 넓은 `"use client"`, zustand 스토어(`stores/`)를 서버 컴포넌트에서 import 하는지
 - **Next.js 16 `cacheComponents`**: 동적 API(`cookies`, `headers`, `Date.now` 등) 사용 시 Suspense 경계나 `use cache` 처리가 빠지지 않았는지
 - **shadcn/ui (Base UI)**: `asChild` 대신 `render` prop을 쓰는지, CLI로 추가한 `components/ui` 원본을 불필요하게 수정하지 않았는지
 - **프로젝트 컨벤션**:
   - `cn`은 `import { cn } from "cn"`로 가져옵니다 (`@/lib/utils`가 아님).
-  - 경로 별칭은 `@/*`입니다.
+  - 경로 별칭은 `@/*`(`src/`)입니다.
   - `usehooks-ts`의 `useLocalStorage`, `useMediaQuery` 등은 `initializeWithValue: false`를 씁니다.
   - 코드 주석은 한국어로 작성합니다.
 - **네비게이션 동기화**: 페이지를 추가하거나 지웠다면 `config/site.ts`(`mainNav`, `docsNav`, `examplesNav`, `shellNav`, `routeLabels`)도 함께 수정했는지

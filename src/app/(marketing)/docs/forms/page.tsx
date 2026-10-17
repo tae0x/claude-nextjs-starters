@@ -27,7 +27,7 @@ export default function FormsDocPage() {
           <code>@hookform/resolvers</code> — zod 스키마를 폼에 연결
         </li>
         <li>
-          <code>components/ui/field</code> — 라벨·설명·에러 메시지 레이아웃
+          <code>src/components/ui/field</code> — 라벨·설명·에러 메시지 레이아웃
         </li>
       </ul>
 

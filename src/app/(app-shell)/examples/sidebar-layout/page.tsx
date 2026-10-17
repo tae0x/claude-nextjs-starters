@@ -23,13 +23,13 @@ const parts = [
     icon: PanelLeft,
     title: "AppSidebar",
     description:
-      "components/layout/app-sidebar.tsx. config/site.ts의 shellNav로 메뉴를 만들고 현재 경로를 활성 표시합니다.",
+      "src/components/layout/app-sidebar.tsx. src/config/site.ts의 shellNav로 메뉴를 만들고 현재 경로를 활성 표시합니다.",
   },
   {
     icon: PanelTop,
     title: "ShellHeader",
     description:
-      "components/layout/shell-header.tsx. 사이드바 토글, 브레드크럼, 알림, 테마 전환, 사용자 메뉴가 들어 있습니다.",
+      "src/components/layout/shell-header.tsx. 사이드바 토글, 브레드크럼, 알림, 테마 전환, 사용자 메뉴가 들어 있습니다.",
   },
   {
     icon: SquareStack,
@@ -76,7 +76,7 @@ export default function SidebarLayoutPage() {
           <CardTitle>전역 상태 연동</CardTitle>
           <CardDescription>
             버튼을 누르면 상단바 종 아이콘의 배지가 함께 바뀝니다. 같은
-            zustand 스토어(stores/notification-store.ts)를 공유하기 때문입니다.
+            zustand 스토어(src/stores/notification-store.ts)를 공유하기 때문입니다.
           </CardDescription>
         </CardHeader>
         <CardContent>

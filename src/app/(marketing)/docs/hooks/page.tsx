@@ -138,12 +138,12 @@ const isDesktop = useMediaQuery("(min-width: 768px)", {
       <h2 id="project-hooks">프로젝트 전용 훅</h2>
       <h3>useIsMobile</h3>
       <p>
-        <code>hooks/use-mobile.ts</code>. 화면 폭이 768px 미만이면{" "}
+        <code>src/hooks/use-mobile.ts</code>. 화면 폭이 768px 미만이면{" "}
         <code>true</code>를 반환합니다. shadcn <code>Sidebar</code>가 내부에서
         사용하며, <code>useMediaQuery</code>로 구현되어 있습니다.
       </p>
       <CodeBlock
-        title="hooks/use-mobile.ts"
+        title="src/hooks/use-mobile.ts"
         code={`import { useMediaQuery } from "usehooks-ts"
 
 const MOBILE_BREAKPOINT = 768
@@ -155,7 +155,7 @@ export function useIsMobile() {
 }`}
       />
       <p>
-        직접 만든 훅은 <code>hooks/</code> 폴더에 <code>use-*.ts</code> 이름으로
+        직접 만든 훅은 <code>src/hooks/</code> 폴더에 <code>use-*.ts</code> 이름으로
         추가하세요.
       </p>
 

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "UI 컴포넌트",
 };
 
-// 설치된 shadcn/ui 컴포넌트 (파일명 = components/ui/<name>.tsx)
+// 설치된 shadcn/ui 컴포넌트 (파일명 = src/components/ui/<name>.tsx)
 const groups = [
   {
     title: "기본",
@@ -73,7 +73,7 @@ export default function ComponentsDocPage() {
     >
       <h2 id="usage">기본 사용법</h2>
       <p>
-        컴포넌트는 <code>components/ui</code>에 소스 코드로 들어 있어 프로젝트에서
+        컴포넌트는 <code>src/components/ui</code>에 소스 코드로 들어 있어 프로젝트에서
         직접 import 해서 씁니다.
       </p>
       <CodeBlock
